@@ -49,17 +49,18 @@ int main() {
                         g_Tnum++; //to store next task in next index
                         
                     }
-                    if(optTask2 == 2) {
+                    if(optTask2 == 2) //prints out tasks
+                    {
                         
                         for(int i = 0; i < 10; i++) {
                             cout<< "'" << tasks[i].taskName << "'. due: " << tasks[i].dueDate << endl;
                         }
                         
                     }
-                    if(optTask2 == 3) {
+                    if(optTask2 == 3)
+                    {
                         
                     }
-                
                 
             }
             
@@ -67,30 +68,8 @@ int main() {
        
        if(optFunc == 2) {
            cout<<"[placeholder text for function 2]" << endl;
-       }
-        
-        
-        
-        
-        
-        
-        
-    }
-    
-    
-    
-    
-    
-    //opt 1: reminders
-    
-    
-    //opt 2: tasks
-    
-    
-    //opt 3
-    
-    
-    
+       }   
+    }    
     return 0;
 }
 
