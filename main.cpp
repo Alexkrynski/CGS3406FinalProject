@@ -21,7 +21,7 @@ int main() {
     while(running) {
         
        
-       cout<<"1. for Task management. 2. for [future function]" << endl;
+       cout<<"1. for Task management. 2. To use the calculator " << endl;
        cin>>optFunc;
        
        
