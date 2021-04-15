@@ -42,32 +42,26 @@ taskArr[0].dueDate = "test date";
                 cin>>optTask;
                 
                     if(optTask == 1) { //new task
-                        cin.ignore(); //clears buffer
-                        cout<<"New task name: ";
-                        getline(cin, taskArr[g_Tnum].taskName);
-                        
-                        cout<<"Due Date: ";
-                        getline(cin, taskArr[g_Tnum].dueDate);
-                        cout<< "New task '" << taskArr[g_Tnum].taskName << "' added sucessfully!";
-                        g_Tnum++; //to store next task in next index 
-                        
-                        
+                        cin.ignore();
+                        cout<<"Enter new task name: ";
+                        getline(cin, nameTemp);
+                        cout<<"Enter the due date: ";
+                        getline(cin, dateTemp);
+                            taskArr[10].taskSetter(taskArr, nameTemp, dateTemp, g_Tnum);
+                            g_Tnum++;
                     }
                     if(optTask == 2) //iterate current tasks
                     { 
-                         taskArr[10].itr(taskArr);
+                        taskArr[10].itr(taskArr);
                     }
-                    if(optTask == 3) {
-                         taskArr[10].itr(taskArr);
-                        
-                        cout<<"\nWhich task would you like to edit? \nTask: ";
-                        cin>>editClassNum;
-                        cout<< "\nPress 1. for not started, 2. for in progress, 3. for finished: ";
-                        cin>>editProgNum;
-                        
-                        taskArr[10].progressChange(taskArr,editClassNum,editProgNum);
-                        
-                        
+                    if(optTask == 3) //itr task to show user, then user edits progress
+                    {
+                        taskArr[10].itr(taskArr);
+                            cout<<"\nWhich task would you like to edit? \nTask: ";
+                            cin>>editClassNum;
+                            cout<< "\nPress 1. for not started, 2. for in progress, 3. for finished: ";
+                            cin>>editProgNum;
+                                taskArr[10].progressChange(taskArr,editClassNum,editProgNum);
                     }
                 
                 cout<<"\n**********************************************************************";    
