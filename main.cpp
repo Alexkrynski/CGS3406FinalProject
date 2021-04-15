@@ -14,6 +14,7 @@ int g_Tnum = 0;//global variable to control what task we're on
 int optFunc; //user picks between 3 functions of app
 int optTask; //navigates 3 options of task management
 int cont; //continue/main menu
+string nameTemp, dateTemp; //passes into setter function
 int editClassNum;//progress function var
 int editProgNum;//progress function var
 
