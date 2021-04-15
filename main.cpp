@@ -27,7 +27,7 @@ taskArr[0].dueDate = "test date";
     while(running) {
         
        cout<<"-------------------------------------------------------------------------- " << endl;
-       cout<<"|  Hi, I'm [name], your digital assistant. Press...                      | " << endl;
+       cout<<"|  Hi, I'm Alfred, your digital assistant. Press...                      | " << endl;
        cout<<"| 1. for Task management. 2. To Use Calculator 3. for [future function]  | " << endl;
        cout<<"-------------------------------------------------------------------------- " << endl;
        
