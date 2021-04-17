@@ -81,9 +81,11 @@ taskArr[0].dueDate = "test date";
        while(optFunc == 2) 
        {
            cout<<"\n********************************************************************";
-           cout<<"\n[placeholder text for function 2]";
+           cout<<"\nWelcome to the Scientific Calculator";
            cout<<"\n********************************************************************" << endl;
-            
+
+                
+
            cout<<"\n**********************************************************************";    
            cout<<"\nPress '1' to continue in Task Manager or '2' to go to the main menu ";
            cout<<"\n**********************************************************************"<< endl;
