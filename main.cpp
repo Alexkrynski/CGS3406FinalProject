@@ -27,10 +27,10 @@ taskArr[0].dueDate = "test date";
     
     while(running) {
         
-       cout<<"-------------------------------------------------------------------------- " << endl;
-       cout<<"|  Hi, I'm Alfred, your digital assistant. Press...                      | " << endl;
-       cout<<"| 1. for Task management. 2. To Use Calculator 3. for [future function]  | " << endl;
-       cout<<"-------------------------------------------------------------------------- " << endl;
+       cout<<"------------------------------------------------------------------------------------ " << endl;
+       cout<<"|  Hi, I'm Alfred, your digital assistant. Press...                                | " << endl;
+       cout<<"| 1. for Task management. 2. To Use Calculator 3. for [future function] 4. To quit  | " << endl;
+       cout<<"------------------------------------------------------------------------------------ " << endl;
        
        
        cin>>optFunc;
@@ -115,6 +115,13 @@ taskArr[0].dueDate = "test date";
                   else
                       break;
        }
+       
+       while(optFunc == 4) 
+       {
+           return 0;
+       }
+        
+       
     }
     return 0;
 }
