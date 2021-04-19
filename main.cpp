@@ -198,13 +198,25 @@ taskArr[0].dueDate = "test date";
        while(optFunc == 3) 
        {
            cout<<"\n********************************************************************";
-           cout<<"\n[placeholder text for function 3]";
+           cout<<"\nWelcome to the timer.Enter when you'll begin task in hour,minutes,seconds in format hh:mm:ss\n";
            cout<<"\n********************************************************************" << endl;
            
-           
+           int h, m, s, addt;
+            scanf("%d:%d:%d", &h, &m, &s);
+            Time t = Time(h, m, s);
+            cout << "Enter the minutes to add:\n";
+            cin >> addt;
+        
+            for (int i = 1; i <= addt; i++) 
+            {
+                t.tick();
+            }
+        
+            cout << "Final time: ";
+            t.print();
            
            cout<<"\n**********************************************************************";    
-           cout<<"\nPress '1' to continue in Task Manager or '2' to go to the main menu ";
+           cout<<"\nPress '1' to continue in Timer or '2' to go to the main menu ";
            cout<<"\n**********************************************************************" << endl;
               cin>>cont;
                   if (cont == 1) 
